@@ -9,3 +9,32 @@ Dichiariamo chi ha vinto
 In un secondo momento creiamo delle funzioni per i numeri random e per il check pari dispari
 */
 
+//senza funzione
+let user = prompt('Scrivi pari o dispari');
+//controllo se l'utente ha inserito le parole giuste
+while (user != "pari" && user != "dispari"){
+    user = prompt('Scrivi pari o dispari');
+}
+
+let numberUser = parseInt(prompt('Inserisci un numero da 1 a 5'));
+//controllo se l'utente ha inserito il numero giusto
+while (numberUser < 0 || numberUser > 5){
+    numberUser = parseInt(prompt('Inserisci un numero da 1 a 5'));
+}
+
+//creo un numero random e lo sommo con quello dell'utente
+let numberPc = Math.floor(Math.random() * 5) + 1;
+let sum = numberUser + numberPc;
+
+//mostro le scelte dell'utente, il numero random e la somma
+console.log('Utente: ' + user);
+console.log('Nome scelto da utente: ' + numberUser);
+console.log('Nome random del PC: ' + numberPc);
+console.log('Somma: ' + sum);
+
+//controllo chi ha vinto
+if (sum % 2 == 0 && user == "pari" || sum % 2 != 0 && user == "dispari") {
+    console.log('Ha vinto utente');
+} else {
+    console.log ('Ha vinto il PC');
+}
