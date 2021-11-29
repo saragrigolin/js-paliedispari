@@ -19,7 +19,7 @@ while (user != "pari" && user != "dispari"){
 
 let numberUser = parseInt(prompt('Inserisci un numero da 1 a 5'));
 //controllo se l'utente ha inserito il numero giusto
-while (numberUser < 0 || numberUser > 5){
+while (numberUser < 1 || numberUser > 5){
     numberUser = parseInt(prompt('Inserisci un numero da 1 a 5'));
 }
 
@@ -64,7 +64,7 @@ while (user != "pari" && user != "dispari") {
 
 let numberUser = parseInt(prompt('Inserisci un numero da 1 a 5'));
 //controllo se l'utente ha inserito il numero giusto
-while (numberUser < 0 || numberUser > 5) {
+while (numberUser < 1 || numberUser > 5) {
     numberUser = parseInt(prompt('Inserisci un numero da 1 a 5'));
 }
 
