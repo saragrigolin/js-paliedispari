@@ -9,6 +9,7 @@ Dichiariamo chi ha vinto
 In un secondo momento creiamo delle funzioni per i numeri random e per il check pari dispari
 */
 
+
 //senza funzione
 let user = prompt('Scrivi pari o dispari');
 //controllo se l'utente ha inserito le parole giuste
@@ -33,8 +34,10 @@ console.log('Nome random del PC: ' + numberPc);
 console.log('Somma: ' + sum);
 
 //controllo chi ha vinto
-if (sum % 2 == 0 && user == "pari" || sum % 2 != 0 && user == "dispari") {
+if (sum % 2 == 0) {
     console.log('Ha vinto utente');
 } else {
     console.log ('Ha vinto il PC');
 }
+
+
