@@ -54,6 +54,7 @@ function reverseStr(string){
 }
 
 let string = prompt('Inserisci una parola');
+string = string.toLocaleLowerCase();
 
 //mostro la parola al contrario
 console.log('parola scelta: ' + string);
