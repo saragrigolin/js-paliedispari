@@ -54,7 +54,8 @@ function reverseStr(string){
 }
 
 let string = prompt('Inserisci una parola');
-string = string.toLocaleLowerCase();
+//tolgo gli spazi e le maiuscole
+string = string.toLocaleLowerCase().replace(/\s+/g, '');
 
 //mostro la parola al contrario
 console.log('parola scelta: ' + string);
